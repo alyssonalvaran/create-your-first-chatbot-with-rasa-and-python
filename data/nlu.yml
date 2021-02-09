@@ -31,62 +31,37 @@ nlu:
     - bye bye
     - see you later
 
-- intent: affirm
+- intent: find_timezone
   examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+    - what's my timezone?
+    - can you tell me the time zone?
+    - tell me the time zone
+    - find the time zone
+    - what time is it?
+    - look up timezone
 
-- intent: deny
+- intent: find_timezone_for_location
   examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+    - what is the timezone in [London](city)?
+    - timezone of [Tokyo](city)
+    - do you know the timezone of [Manila](city)?
+    - i need to know the timezone of [Seoul](city)
+    - what time is it in [New York](city)?
+    - [Bangkok](city) time
+    - timezone in [Paris](city)
+    - look up timezone in [Beijing](city)
 
-- intent: mood_great
+- intent: city_info
   examples: |
-    - perfect
-    - great
-    - amazing
-    - feeling like a king
-    - wonderful
-    - I am feeling very good
-    - I am great
-    - I am amazing
-    - I am going to save the world
-    - super stoked
-    - extremely good
-    - so so perfect
-    - so good
-    - so perfect
+    - [London](city)
+    - [San Francisco](city)
+    - [Toronto](city)
+    - [Beijing](city)
+    - [Manila](city)
 
-- intent: mood_unhappy
+- intent: thanks
   examples: |
-    - my day was horrible
-    - I am sad
-    - I don't feel very well
-    - I am disappointed
-    - super sad
-    - I'm so sad
-    - sad
-    - very sad
-    - unhappy
-    - not good
-    - not very good
-    - extremly sad
-    - so saad
-    - so sad
-
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+    - thank you
+    - thanks!
+    - you're a great help
+    - i appreciate it
